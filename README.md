@@ -43,7 +43,7 @@ frontend/ ├── src/ │ ├── components/ # React component files │ �
 
 ```bash
 # Clone the repository
-git clone https://github.com/leadusername/iyf-s12-communityhub-team-leadusername.git
+git clone https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno.git
 
 # Navigate into the project
 cd frontend
