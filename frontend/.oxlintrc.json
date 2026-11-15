@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react"],
+  "env": { "browser": true, "es2022": true },
+"rules": {
+  "react/rules-of-hooks": "error",
+  "react/only-export-components": ["warn", { "allowConstantExport": true }],
+  "no-var": "error",
+  "eqeqeq": "error",
+  "prefer-const": "warn"
+},
+"ignorePatterns": ["dist", "node_modules"]
+}
