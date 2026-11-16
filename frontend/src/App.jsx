@@ -1,24 +1,13 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import PostCard from './components/PostCard';
-import Sidebar from './components/Sidebar';
-import Button from './components/Button';
+
+import Task16_1 from './exercises/JosphineMoraa/Task16-1.jsx';
+
 
 function App() {
-    return (
-        <div className="app">
-            <Header />
-            <div className="content-wrapper">
-                <main>
-                    <h2>Welcome to CommunityHub</h2>
-                    <PostCard />
-                    <Button />
-                </main>
-                <Sidebar />
-            </div>
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Task16_1 />
+    </div>
+  );
 }
 
 export default App;
