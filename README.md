@@ -11,6 +11,7 @@ A collaborative team project built with **React (Vite)** as part of the IYF Week
 | Member | Stephen Muchemi | [@stephenmuchemi091-dot](https://github.com/stephenmuchemi091-dot) |
 | Member | Belinda May | [@Belinda-May](https://github.com/Belinda-May) |
 | Member | Josphine Moraa | [@JosphineMoraa](https://github.com/JosphineMoraa) |
+| Member | Antony Shisia | [@antonyshisia](https://github.com/antonyshisia) |
 
 ## About
 
