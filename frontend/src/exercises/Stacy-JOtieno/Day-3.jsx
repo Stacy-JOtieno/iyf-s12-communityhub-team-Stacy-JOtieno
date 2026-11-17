@@ -1,9 +1,17 @@
-function UserCard({ user }) {
+import UserCard from './UserCard';
+
+function UserList({ users = [] }) {
+    if (users.length === 0) {
+        return <p>No users found.</p>;
+    }
+
     return (
-        <li>
-            <strong>{user.name}</strong> ({user.email})
-        </li>
+        <ul>
+            {users.map((user) => (
+                <UserCard key={user.id} user={user} />
+            ))}
+        </ul>
     );
 }
 
-export default UserCard;
+export default UserList;
