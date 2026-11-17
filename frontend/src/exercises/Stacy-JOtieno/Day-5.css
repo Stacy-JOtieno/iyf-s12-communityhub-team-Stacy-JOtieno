@@ -1,0 +1,10 @@
+.layout { display: flex; flex-direction: column; border: 1px solid #ccc; }
+.layout-header, .layout-footer { padding: 0.5rem 1rem; background: #f3f4f6; color: #111; }
+.layout-body { display: flex; flex-direction: column; gap: 1rem; padding: 1rem; }
+.layout-main { flex: 1; }
+.layout-sidebar { padding: 1rem; background: #f9fafb; color: #111; }
+
+@media (min-width: 768px) {
+    .layout-body { flex-direction: row; }
+    .layout-sidebar { width: 220px; }
+}
