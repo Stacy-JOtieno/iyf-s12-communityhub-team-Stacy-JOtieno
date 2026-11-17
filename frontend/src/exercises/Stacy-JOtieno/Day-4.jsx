@@ -1,17 +1,25 @@
-import UserCard from './UserCard';
+import './ExerciseButton.css';
 
-function UserList({ users = [] }) {
-    if (users.length === 0) {
-        return <p>No users found.</p>;
-    }
+function ExerciseButton({
+    text,
+    onClick,
+    variant = 'primary',
+    disabled = false,
+    size = 'medium',
+    loading = false
+}) {
+    const isDisabled = disabled || loading;
 
     return (
-        <ul>
-            {users.map((user) => (
-                <UserCard key={user.id} user={user} />
-            ))}
-        </ul>
+        <button
+            className={`ex-btn ex-btn-${variant} ex-btn-${size}`}
+            onClick={onClick}
+            disabled={isDisabled}
+        >
+            {loading && <span className="ex-spinner" aria-hidden="true" />}
+            {loading ? 'Loading...' : text}
+        </button>
     );
 }
 
-export default UserList;
+export default ExerciseButton;
