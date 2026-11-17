@@ -1,7 +1,4 @@
 
-import Task16_1 from './exercises/JosphineMoraa/Task16-1.jsx';
-
-
 function App() {
   return (
     <div>
@@ -10,4 +7,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
