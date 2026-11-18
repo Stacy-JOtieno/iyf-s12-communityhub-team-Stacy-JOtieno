@@ -1,0 +1,6 @@
+.header { display: flex; justify-content: space-between; align-items: center;
+          padding: 1rem 2rem; background: #2563eb; color: #fff; flex-wrap: wrap; gap: 1rem; }
+.header h1 { margin: 0; font-size: 1.25rem; }
+.header nav a { color: #fff; text-decoration: none; margin-left: 1rem; }
+.header nav a:hover { text-decoration: underline; }
+.app main { padding: 1rem 2rem; }

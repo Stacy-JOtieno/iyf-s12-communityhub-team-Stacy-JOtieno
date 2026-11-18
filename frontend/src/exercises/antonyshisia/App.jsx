@@ -1,0 +1,15 @@
+import "./exercise.css";
+import Header from "./components/Header";
+
+function App() {
+    return (
+        <div className="app">
+            <Header />
+            <main>
+                <h2>Welcome to CommunityHub</h2>
+            </main>
+        </div>
+    );
+}
+
+export default App;
