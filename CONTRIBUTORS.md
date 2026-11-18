@@ -51,3 +51,27 @@
 - [PR #8 – Task 15.3 Props](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/8)
 - [PR #7 – Task 15.2 React Components](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/7)
 - [PR #6 – Task 15.1 Intro](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/6)
+
+
+### Belinda May (@Belinda-May)
+
+- **PRs opened:**
+  - [#13](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/13) - Community post creation and feed.
+  - [#44](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/44) - Community post search and automated utility tests.
+
+- **PRs merged:**
+  - [#13](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/13) - Community post creation and feed.
+  - [#44](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/44) - Community post search and automated utility tests.
+
+- **PRs reviewed and approved:**
+  - [#14](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/14) - React event handling.
+  - [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25) - Vite scaffold.
+  - [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - JSX intro component.
+  - [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Reusable UI components.
+  - [#45](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/45) - Card component.
+  - [#46](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/46) - UserList challenge.
+  - [#47](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/47) - Week 8 exercises.
+  - [#48](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/48) - Button component.
+  - [#49](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/49) - PageLayout component.
+
+- **Issues closed:** None verified.
