@@ -1,18 +1,139 @@
-.header { display: flex; justify-content: space-between; align-items: center;
-          padding: 1rem 2rem; background: #2563eb; color: #fff; flex-wrap: wrap; gap: 1rem; }
-.header h1 { margin: 0; font-size: 1.25rem; }
-.header nav a { color: #fff; text-decoration: none; margin-left: 1rem; }
-.header nav a:hover { text-decoration: underline; }
-.app main { padding: 1rem 2rem; }
-.layout { display: grid; grid-template-columns: 1fr 220px; gap: 1.5rem; padding: 1rem 2rem; }
-.layout main { padding: 0; }
-.post-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
-             padding: 1.25rem; margin-bottom: 1rem; }
-.post-card h3 { margin: 0 0 .5rem; }
-.post-card span { color: #6b7280; font-size: .875rem; }
-.sidebar { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem; }
-.sidebar ul { list-style: none; margin: 0; padding: 0; }
-.sidebar li { margin: .4rem 0; }
-.btn { padding: .6rem 1.1rem; border: none; border-radius: 6px; background: #2563eb;
-       color: #fff; cursor: pointer; font: inherit; }
-.footer { text-align: center; padding: 1.5rem; color: #6b7280; }
+.exercise-15-2.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+    color: #1f2937;
+    font-family: system-ui, sans-serif;
+}
+
+.exercise-15-2 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #2563eb;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.exercise-15-2 .header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.exercise-15-2 .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.exercise-15-2 .header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.exercise-15-2 .header nav a:hover {
+    text-decoration: underline;
+}
+
+.exercise-15-2 .layout {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.exercise-15-2 .layout main h2 {
+    margin-top: 0;
+}
+
+.exercise-15-2 .post-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.exercise-15-2 .post-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.exercise-15-2 .post-card span {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.exercise-15-2 .sidebar {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    align-self: start;
+}
+
+.exercise-15-2 .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exercise-15-2 .sidebar li {
+    margin: 0.4rem 0;
+}
+
+.exercise-15-2 .sidebar a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.exercise-15-2 .sidebar a:hover {
+    text-decoration: underline;
+}
+
+.exercise-15-2 .actions {
+    margin-top: 0.5rem;
+}
+
+.exercise-15-2 .btn {
+    padding: 0.6rem 1.1rem;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+}
+
+.exercise-15-2 .btn:hover {
+    background: #1d4ed8;
+}
+
+.exercise-15-2 a:focus-visible,
+.exercise-15-2 .btn:focus-visible {
+    outline: 2px solid #1e3a8a;
+    outline-offset: 2px;
+}
+
+.exercise-15-2 .footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #6b7280;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 700px) {
+    .exercise-15-2 .header,
+    .exercise-15-2 .layout {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .exercise-15-2 .layout {
+        grid-template-columns: 1fr;
+    }
+}

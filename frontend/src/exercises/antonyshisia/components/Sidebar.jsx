@@ -1,6 +1,6 @@
 function Sidebar() {
     return (
-        <aside className="sidebar">
+        <aside className="sidebar" aria-label="Topics">
             <h3>Topics</h3>
             <ul>
                 <li><a href="#">React</a></li>

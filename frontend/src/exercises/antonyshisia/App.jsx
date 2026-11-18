@@ -7,7 +7,7 @@ import Button from "./components/Button";
 
 function App() {
     return (
-        <div className="app">
+        <div className="exercise-15-2 app">
             <Header />
 
             <div className="layout">
@@ -16,7 +16,9 @@ function App() {
                     <PostCard />
                     <PostCard />
                     <PostCard />
-                    <Button />
+                    <div className="actions">
+                        <Button />
+                    </div>
                 </main>
 
                 <Sidebar />
