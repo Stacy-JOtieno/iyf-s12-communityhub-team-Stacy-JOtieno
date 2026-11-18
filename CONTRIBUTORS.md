@@ -52,7 +52,6 @@
 - [PR #7 – Task 15.2 React Components](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/7)
 - [PR #6 – Task 15.1 Intro](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/6)
 
-
 ### Belinda May (@Belinda-May)
 
 - **PRs opened:**
@@ -75,3 +74,31 @@
   - [#49](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/49) - PageLayout component.
 
 - **Issues closed:** None verified.
+
+### Antony Shisia (@antonyshisia)
+
+#### Week 8
+
+- **PRs opened:**
+  - [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - Task 15.1 JSX intro.
+  - [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Task 15.2 components.
+  - [#33](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/33) - Task 15.3 props.
+  - [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Task 15.4 composition.
+  - [#35](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/35) - Task 16.1 useState.
+  - [#36](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/36) - Task 16.2 events.
+  - [#37](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/37) - Task 16.3 arrays and objects.
+  - [#38](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/38) - Task 16.4 lifting state.
+  - [#39](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/39) - Daily challenges.
+  - [#40](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/40) - CommunityHub mini-project.
+  - [#41](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/41) - Week 8 contributors entry.
+
+- **PRs merged:**
+  - [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - Task 15.1 JSX intro.
+  - [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Task 15.2 components.
+  - [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Task 15.4 composition.
+
+- **PRs reviewed:**
+  - [#30](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/30#pullrequestreview-5954247231) - Fix spelling of contributor name.
+  - [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25#pullrequestreview-5954247622) - Vite scaffold.
+
+- **Issues closed:** None yet.
