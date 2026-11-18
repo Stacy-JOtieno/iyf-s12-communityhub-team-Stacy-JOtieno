@@ -51,3 +51,10 @@
 - [PR #8 – Task 15.3 Props](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/8)
 - [PR #7 – Task 15.2 React Components](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/7)
 - [PR #6 – Task 15.1 Intro](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/6)
+
+### @antonyshisia
+
+#### Week 8
+- **PRs I opened:** [#31 Task 15.1 JSX intro](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31), [#32 Task 15.2 components](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32), [#33 Task 15.3 props](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/33), [#34 Task 15.4 composition](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34), [#35 Task 16.1 useState](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/35), [#36 Task 16.2 events](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/36), [#37 Task 16.3 arrays and objects](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/37), [#38 Task 16.4 lifting state](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/38), [#39 Daily challenges](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/39), [#40 CommunityHub mini-project](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/40)
+- **PRs I reviewed:** none yet
+- **Issues I closed:** none yet
