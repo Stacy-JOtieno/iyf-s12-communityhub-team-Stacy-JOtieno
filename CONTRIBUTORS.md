@@ -34,7 +34,7 @@
 - [#9](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/9)
 - [#8](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/8)
 
-- ## week 8 -J0sphineMoraa
+- ## week 8 -JosphineMoraa
 
 - ## Pull Requests Opened
 
