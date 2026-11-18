@@ -2,7 +2,7 @@ function Header() {
     return (
         <header className="header">
             <h1>CommunityHub</h1>
-            <nav aria-label="Primary">
+            <nav>
                 <a href="#">Home</a>
                 <a href="#">Posts</a>
                 <a href="#">About</a>
