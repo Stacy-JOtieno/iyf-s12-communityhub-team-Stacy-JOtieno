@@ -4,8 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
-import CreatePost from './components/CreatePost';
-import PostList from './components/PostList';
+import Button from './components/Button';
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -20,12 +19,7 @@ function App() {
 
       <main className="main-content">
         <Sidebar />
-
-        <div className="posts-section">
-          <CreatePost onAddPost={handleAddPost} />
-          <PostList posts={posts} />
-        </div>
-      </main>
+      </div>
 
       <Footer />
     </div>
