@@ -127,6 +127,23 @@
   background: #3e3588;
 }
 
+/* Search posts */
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px;
+  border: 1px solid #dfe2eb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font: inherit;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #5146a5;
+  box-shadow: 0 0 0 3px rgba(81, 70, 165, 0.1);
+}
+
 /* Community posts */
 .post-card {
   padding: 20px 0;
