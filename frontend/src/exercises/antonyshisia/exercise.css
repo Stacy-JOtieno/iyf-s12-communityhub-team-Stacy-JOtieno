@@ -4,3 +4,15 @@
 .header nav a { color: #fff; text-decoration: none; margin-left: 1rem; }
 .header nav a:hover { text-decoration: underline; }
 .app main { padding: 1rem 2rem; }
+.layout { display: grid; grid-template-columns: 1fr 220px; gap: 1.5rem; padding: 1rem 2rem; }
+.layout main { padding: 0; }
+.post-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+             padding: 1.25rem; margin-bottom: 1rem; }
+.post-card h3 { margin: 0 0 .5rem; }
+.post-card span { color: #6b7280; font-size: .875rem; }
+.sidebar { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem; }
+.sidebar ul { list-style: none; margin: 0; padding: 0; }
+.sidebar li { margin: .4rem 0; }
+.btn { padding: .6rem 1.1rem; border: none; border-radius: 6px; background: #2563eb;
+       color: #fff; cursor: pointer; font: inherit; }
+.footer { text-align: center; padding: 1.5rem; color: #6b7280; }
