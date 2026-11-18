@@ -73,6 +73,94 @@
   - [#48](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/48) - Button component.
   - [#49](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/49) - PageLayout component.
 
+### Stacy Otieno (@Stacy-JOtieno)
+
+- **PRs opened**
+- [#1](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/1) - Create .gitignore
+- [#2](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/2) - Vite React scaffold in frontend
+- [#5](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/5) - Add contents in .oxlintrc.json
+- [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25) - Setup/vite scaffold
+
+- **PRs merged**
+- [#1](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/1) - Create .gitignore
+- [#2](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/2) - Vite React scaffold in frontend
+- [#5](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/5) - Add contents in .oxlintrc.json
+- [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25) - Setup/vite scaffold
+
+- **PRs reviewed and approved**
+- [#3](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/3) - setup contributors
+- [#7](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/7) - complete Task 15.2 with all 5 React components and App integration
+- [#10](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/10) - Add: Task 15.1 Intro exercise for Carlos Adenge
+- [#21](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/21) - Add exercise 16.1
+- [#22](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/22) - Add Task 16.2
+- [#24](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/24) - Add Task 16.3.jsx
+- [#26](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/26) - Delete contributors.md
+- [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - JSX intro component
+- [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Header, Footer, PostCard, Sidebar, and Button
+- [#33](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/33) - props, list keys, and button defaults
+- [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Add: task 15.4 children, layout, and conditional rendering
+- [#35](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/35) - useState counter, toggle, and user form
+- [#36](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/36) - event handlers and contact form
+- [#37](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/37) - todo list with array and object state
+- [#38](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/38) - lift post likes up to the parent
+- [#39](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/39) - week 8 daily challenges
+- [#40](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/40) -  CommunityHub feed with likes, search, and tested helpers
+- [#41](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/41) - Week 8 contributors entry
+- [#42](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/42) - Fix spelling in contributors
+- [#44](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/44) - community post search and utility tests post search and utility 
+- [#47](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/47) - task15 4.jsx
+
+### Stephen Muchemi (@Stephenmuchemi091-dot)
+
+- **PRs opened**
+
+- [#47](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/47) - task15 4.jsx
+- 
+- **PRs merged**
+
+- [#47](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/47) - task15 4.jsx
+
+- **PRs reviewed and approved**
+- [#3](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/3) - setup contributors
+- [#5](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/5) - Add contents in .oxlintrc.json
+- [#6](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/6) - Add: Task 15.1 Intro component
+- [#42](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/42) - Fix spelling in contributors
+- 
+- 
+### Antony Shisia (@antonyshisia)
+
+- **PRs opened**
+- [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - JSX intro component
+- [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Header, Footer, PostCard, Sidebar, and Button
+- [#33](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/33) - props, list keys, and button defaults
+- [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Add: task 15.4 children, layout, and conditional rendering
+- [#35](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/35) - useState counter, toggle, and user form
+- [#36](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/36) - event handlers and contact form
+- [#37](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/37) - todo list with array and object state
+- [#38](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/38) - lift post likes up to the parent
+- [#39](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/39) - week 8 daily challenges
+- [#40](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/40) -  CommunityHub feed with likes, search, and tested helpers
+- [#41](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/41) - Week 8 contributors entry
+
+- **PRs merged**
+
+- [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - JSX intro component
+- [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Header, Footer, PostCard, Sidebar, and Button
+- [#33](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/33) - props, list keys, and button defaults
+- [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Add: task 15.4 children, layout, and conditional rendering
+- [#35](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/35) - useState counter, toggle, and user form
+- [#36](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/36) - event handlers and contact form
+- [#37](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/37) - todo list with array and object state
+- [#38](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/38) - lift post likes up to the parent
+- [#39](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/39) - week 8 daily challenges
+- [#40](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/40) -  CommunityHub feed with likes, search, and tested helpers
+- [#41](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/41) - Week 8 contributors entry
+
+- **PRs reviewed and approved**
+
+- [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25) - Setup/vite scaffold
+- [#30](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/30) - Fix spelling of contributor name in CONTRIBUTORS.md
+
 - **Issues closed:** None verified.
 
 ### Antony Shisia (@antonyshisia)
