@@ -29,6 +29,7 @@ function PostList({ posts = [] }) {
         filteredPosts.map((post, index) => (
           <PostCard
             key={post.id || index}
+            id={post.id}
             title={post.title}
             excerpt={post.excerpt}
             author={post.author}

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 function CreatePost({ onAddPost, author = 'Community Member' }) {
