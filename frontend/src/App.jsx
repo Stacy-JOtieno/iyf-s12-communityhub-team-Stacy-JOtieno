@@ -4,24 +4,81 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
-import Button from './components/Button';
+import CreatePost from './components/CreatePost';
 
 function App() {
   const [posts, setPosts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   function handleAddPost(newPost) {
     setPosts((previousPosts) => [newPost, ...previousPosts]);
   }
 
+  const filteredPosts =
+    selectedCategory === 'All'
+      ? posts
+      : posts.filter(
+          (post) =>
+            post.category?.toLowerCase() ===
+            selectedCategory.toLowerCase()
+        );
+
   return (
-    <div className="app">
+    <div className="app" id="home">
       <Header />
 
       <main className="main-content">
-        <Sidebar />
-      </div>
+        <section className="posts-section" id="posts">
+          <h2>Community Posts</h2>
 
-      <Footer />
+          <CreatePost onAddPost={handleAddPost} />
+
+          <div className="category-filters">
+            {[
+              'All',
+              'General',
+              'Announcements',
+              'Tech & Coding',
+              'Events',
+            ].map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={
+                  selectedCategory === category ? 'active' : ''
+                }
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          <div className="posts-list">
+            {filteredPosts.length === 0 ? (
+              <p>No posts in this category yet.</p>
+            ) : (
+              filteredPosts.map((post, index) => (
+                <article
+                  className="post-card"
+                  key={post.id || index}
+                >
+                  <h3>{post.title}</h3>
+                  <p>{post.excerpt}</p>
+                  <small>
+                    By {post.author || 'Community Member'}
+                  </small>
+                </article>
+              ))
+            )}
+          </div>
+        </section>
+
+        <Sidebar />
+      </main>
+
+      <div id="about">
+        <Footer />
+      </div>
     </div>
   );
 }
