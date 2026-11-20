@@ -1,35 +1,27 @@
-
-import { useState } from 'react';
-import './App.css';
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
-import CreatePost from './components/CreatePost';
-import PostList from './components/PostList';
+import { Route, Routes } from "react-router-dom";
+import { PostsProvider } from "./context/PostsProvider";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home";
+import Posts from "./pages/Posts";
+import PostDetail from "./pages/PostDetail";
+import CreatePost from "./pages/CreatePost";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  const [posts, setPosts] = useState([]);
-
-  function handleAddPost(newPost) {
-    setPosts((previousPosts) => [newPost, ...previousPosts]);
-  }
-
   return (
-    <div className="app">
-      <Header />
-
-      <main className="main-content">
-        <Sidebar />
-
-        <div className="content-area">
-          <CreatePost onAddPost={handleAddPost} />
-          <PostList posts={posts} />
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+    <PostsProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="posts" element={<Posts />} />
+          <Route path="posts/:postId" element={<PostDetail />} />
+          <Route path="create" element={<CreatePost />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </PostsProvider>
   );
 }
 
