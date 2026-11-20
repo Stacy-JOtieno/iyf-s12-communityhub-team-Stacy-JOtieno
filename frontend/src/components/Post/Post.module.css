@@ -1,0 +1,59 @@
+.list {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 1.15rem;
+}
+
+.card a {
+  color: #1e3a8a;
+}
+
+.meta {
+  color: #3e465c;
+  margin-bottom: 0;
+}
+
+.form {
+  display: grid;
+  gap: 4px;
+  max-width: 640px;
+}
+
+.bodyLabel {
+  display: block;
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.form textarea:focus-visible {
+  outline: 3px solid #1e3a8a;
+  outline-offset: 1px;
+}
+
+.formError {
+  color: #991b1b;
+}
+
+.detail {
+  display: grid;
+  gap: 12px;
+}
