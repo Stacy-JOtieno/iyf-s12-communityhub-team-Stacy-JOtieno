@@ -89,6 +89,13 @@
   align-items: flex-start;
 }
 
+.sideTitle {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
 .sidebar {
   width: 220px;
   flex-shrink: 0;

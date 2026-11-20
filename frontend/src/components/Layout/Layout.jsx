@@ -31,7 +31,7 @@ function Layout() {
       </header>
       <div className={styles.body}>
         <aside className={styles.sidebar}>
-          <h2>Explore</h2>
+          <p className={styles.sideTitle}>Explore</p>
           <nav aria-label="Explore">
             <ul>
               <li>

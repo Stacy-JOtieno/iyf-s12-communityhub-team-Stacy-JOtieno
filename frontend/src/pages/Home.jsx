@@ -6,7 +6,7 @@ import ErrorMessage from "../components/shared/ErrorMessage";
 import { Card } from "../components/shared";
 
 function Home() {
-  const { posts, loading, error, reload } = usePosts();
+  const { posts, loading, error, reload, toggleLike } = usePosts();
 
   return (
     <section>
@@ -20,7 +20,9 @@ function Home() {
       <h2>Recent posts</h2>
       {loading && <LoadingSpinner text="Loading posts..." />}
       {error && <ErrorMessage message={error} onRetry={reload} />}
-      {!loading && !error && <PostList posts={posts.slice(0, 5)} />}
+      {!loading && !error && (
+        <PostList posts={posts.slice(0, 5)} onLike={toggleLike} />
+      )}
     </section>
   );
 }
