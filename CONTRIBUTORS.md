@@ -173,6 +173,7 @@ Checked on 20 November 2026. These pull requests are open and still need a teamm
   - [#63](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/63) - Task 18.4 accessibility.
   - [#64](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/64) - Daily challenges.
   - [#65](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/65) - CommunityHub routes and JSONPlaceholder posts.
+  - [#66](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/66) - Week 9 contributors entry.
 
 - **PRs merged:** None yet.
 
