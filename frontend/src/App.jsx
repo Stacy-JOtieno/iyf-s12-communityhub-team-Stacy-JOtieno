@@ -17,14 +17,18 @@ function App() {
 
   return (
     <div className="app">
+      <a className="skip-link" href="#main">Skip to content</a>
       <Header />
 
-      <main className="main-content">
+      <main id="main" className="main-content">
         <Sidebar />
 
         <div className="content-area">
           <CreatePost onAddPost={handleAddPost} />
           <PostList posts={posts} />
+          <p id="about">
+            CommunityHub is the Season 12 space for sharing posts with the cohort.
+          </p>
         </div>
       </main>
 

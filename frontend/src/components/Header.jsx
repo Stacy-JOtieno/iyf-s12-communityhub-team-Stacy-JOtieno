@@ -4,10 +4,10 @@ function Header() {
     <header className="header">
       <h1>CommunityHub</h1>
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Posts</a>
-        <a href="#">About</a>
+      <nav aria-label="Primary">
+        <a href="#main">Home</a>
+        <a href="#feed">Posts</a>
+        <a href="#about">About</a>
       </nav>
     </header>
   );

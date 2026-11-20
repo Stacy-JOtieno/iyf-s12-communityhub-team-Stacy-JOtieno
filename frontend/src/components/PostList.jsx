@@ -9,12 +9,13 @@ function PostList({ posts = [] }) {
   const filteredPosts = filterPosts(posts, searchTerm);
 
   return (
-    <section className="post-list">
+    <section id="feed" className="post-list">
       <h2>Community Feed</h2>
 
+      <label htmlFor="post-search">Search posts</label>
       <input
+        id="post-search"
         type="text"
-        aria-label="Search community posts"
         placeholder="Search by title, content or author..."
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
