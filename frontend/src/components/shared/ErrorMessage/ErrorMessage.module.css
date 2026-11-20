@@ -1,0 +1,28 @@
+.box {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #7f1d1d;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.mark {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.box button {
+  margin-top: 8px;
+  background: #991b1b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.box button:focus-visible {
+  outline: 3px solid #1e3a8a;
+  outline-offset: 2px;
+}

@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -28,11 +27,7 @@ function App() {
               <Route path="/posts/:id" element={<PostDetail />} />
               <Route path="/create" element={<CreatePostPage />} />
               <Route path="/about" element={<About />} />
-
-              <Route
-                path="*"
-                element={<h1>Sorry, page not found.</h1>}
-              />
+              <Route path="*" element={<h1>Sorry, page not found.</h1>} />
             </Routes>
           </main>
         </div>

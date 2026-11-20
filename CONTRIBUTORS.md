@@ -150,9 +150,33 @@
   - [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - Task 15.1 JSX intro.
   - [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Task 15.2 components.
   - [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Task 15.4 composition.
+  - [#41](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/41) - Week 8 contributors entry.
 
 - **PRs reviewed:**
   - [#30](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/30#pullrequestreview-5954247231) - Fix spelling of contributor name.
   - [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25#pullrequestreview-5954247622) - Vite scaffold.
+
+- **Issues closed:** None yet.
+
+#### Week 9
+
+Checked on 20 November 2026. These pull requests are open and still need a teammate review before they can merge.
+
+- **PRs opened:**
+  - [#56](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/56) - Task 17.1 useEffect.
+  - [#57](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/57) - Task 17.2 data fetching.
+  - [#58](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/58) - Task 17.3 React Router.
+  - [#59](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/59) - Task 17.4 loading and errors.
+  - [#60](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/60) - Task 18.1 custom hooks.
+  - [#61](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/61) - Task 18.2 CSS Modules and Tailwind.
+  - [#62](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/62) - Task 18.3 component library.
+  - [#63](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/63) - Task 18.4 accessibility.
+  - [#64](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/64) - Daily challenges.
+  - [#65](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/65) - CommunityHub routes and JSONPlaceholder posts.
+  - [#66](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/66) - Week 9 contributors entry.
+
+- **PRs merged:** None yet.
+
+- **PRs reviewed:** None for Week 9.
 
 - **Issues closed:** None yet.

@@ -1,0 +1,45 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:focus-visible {
+    outline: 3px solid #1e3a8a;
+    outline-offset: 2px;
+}
+
+.small { padding: 0.25rem 0.75rem; font-size: 0.875rem; }
+.medium { padding: 0.5rem 1rem; }
+.large { padding: 0.75rem 1.5rem; font-size: 1.125rem; }
+
+.primary { background: #1d4ed8; color: #fff; border: none; }
+.primary:hover:not(:disabled) { background: #1e40af; }
+.secondary { background: #e5e7eb; color: #1f2937; border: none; }
+.secondary:hover:not(:disabled) { background: #d1d5db; }
+.outline { background: #fff; color: #1d4ed8; border: 2px solid #1d4ed8; }
+.outline:hover:not(:disabled) { background: #eff6ff; }
+.danger { background: #b91c1c; color: #fff; border: none; }
+.danger:hover:not(:disabled) { background: #991b1b; }
+.ghost { background: transparent; color: #1f2937; border: none; }
+.ghost:hover:not(:disabled) { background: #f3f4f6; }
+
+.fullWidth { width: 100%; }
+.disabled { opacity: 0.55; cursor: not-allowed; }
+
+.spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: shared-spin 0.7s linear infinite;
+}
+
+@keyframes shared-spin { to { transform: rotate(360deg); } }

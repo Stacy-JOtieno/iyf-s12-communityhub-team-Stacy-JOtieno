@@ -1,10 +1,10 @@
-
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 function useFetch(url) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [reloadKey, setReloadKey] = useState(0);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -19,13 +19,13 @@ function useFetch(url) {
         });
 
         if (!response.ok) {
-          throw new Error('Failed to fetch data');
+          throw new Error("Failed to fetch data");
         }
 
         const result = await response.json();
         setData(result);
       } catch (err) {
-        if (err.name !== 'AbortError') {
+        if (err.name !== "AbortError") {
           setError(err.message);
         }
       } finally {
@@ -37,12 +37,14 @@ function useFetch(url) {
 
     fetchData();
 
-    return () => {
-      controller.abort();
-    };
-  }, [url]);
+    return () => controller.abort();
+  }, [url, reloadKey]);
 
-  return { data, loading, error };
+  function reload() {
+    setReloadKey((key) => key + 1);
+  }
+
+  return { data, loading, error, reload };
 }
 
 export default useFetch;
