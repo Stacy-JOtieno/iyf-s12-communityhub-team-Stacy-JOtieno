@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
       <nav aria-label="Main navigation">
         <Link to="/">Home</Link>
         <Link to="/posts">Posts</Link>
-        <Link to="/create-post">Create Post</Link>
+        <Link to="/create">Create Post</Link>
         <Link to="/about">About</Link>
       </nav>
     </header>

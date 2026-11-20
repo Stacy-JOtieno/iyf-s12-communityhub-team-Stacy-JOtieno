@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <section className="home-page">
@@ -15,6 +17,12 @@ function Home() {
         CommunityHub is a place where members can learn, share,
         interact, and support one another.
       </p>
+
+      <nav aria-label="Explore CommunityHub">
+        <Link to="/posts">Explore Posts</Link>
+        {" | "}
+        <Link to="/create-post">Create a Post</Link>
+      </nav>
     </section>
   );
 }
