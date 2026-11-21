@@ -1,0 +1,67 @@
+.day-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.day-4 h1 {
+    flex-basis: 100%;
+}
+
+.day-4 .btn {
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+}
+
+.day-4 .btn-small {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.85rem;
+}
+
+.day-4 .btn-medium {
+    padding: 0.55rem 1rem;
+}
+
+.day-4 .btn-large {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.05rem;
+}
+
+.day-4 .btn-primary {
+    background: #2563eb;
+}
+
+.day-4 .btn-secondary {
+    background: #4b5563;
+}
+
+.day-4 .btn-danger {
+    background: #dc2626;
+}
+
+.day-4 .btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.day-4 .spinner {
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.4rem;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    vertical-align: -0.1em;
+    animation: day4-spin 0.7s linear infinite;
+}
+
+@keyframes day4-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
