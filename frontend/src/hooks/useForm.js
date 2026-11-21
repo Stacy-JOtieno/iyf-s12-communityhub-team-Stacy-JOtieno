@@ -1,39 +1,45 @@
 import { useState } from "react";
 
-function useForm(initialValues, validate) {
-    const [values, setValues] = useState(initialValues);
-    const [errors, setErrors] = useState({});
-    const [touched, setTouched] = useState({});
+function useForm(initialValues = {}, validate = () => ({})) {
+  const [values, setValues] = useState(initialValues);
+  const [errors, setErrors] = useState({});
+  const [touched, setTouched] = useState({});
 
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setValues((prev) => ({ ...prev, [name]: value }));
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    const updatedValues = {
+      ...values,
+      [name]: value,
     };
 
-    const handleBlur = (event) => {
-        const { name } = event.target;
-        setTouched((prev) => ({ ...prev, [name]: true }));
+    setValues(updatedValues);
+    setErrors(validate(updatedValues));
+  };
 
-        if (validate) {
-            setErrors(validate(values));
-        }
-    };
+  const handleBlur = (event) => {
+    const { name } = event.target;
 
-    const reset = () => {
-        setValues(initialValues);
-        setErrors({});
-        setTouched({});
-    };
+    setTouched((previousTouched) => ({
+      ...previousTouched,
+      [name]: true,
+    }));
+  };
 
-    return {
-        values,
-        errors,
-        touched,
-        handleChange,
-        handleBlur,
-        reset,
-        setValues
-    };
+  const reset = () => {
+    setValues(initialValues);
+    setErrors({});
+    setTouched({});
+  };
+
+  return {
+    values,
+    errors,
+    touched,
+    handleChange,
+    handleBlur,
+    reset,
+  };
 }
 
 export default useForm;

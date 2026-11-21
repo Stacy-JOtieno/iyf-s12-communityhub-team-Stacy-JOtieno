@@ -12,6 +12,43 @@ import CreatePostPage from "./pages/CreatePostPage";
 import About from "./pages/About";
 
 function App() {
+  const [posts, setPosts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  function handleAddPost(newPost) {
+    setPosts((previousPosts) => sortNewestFirst([newPost, ...previousPosts]));
+  }
+
+  function handleLike(id) {
+    setPosts((previousPosts) =>
+      previousPosts.map((post) => {
+        if (post.id !== id) {
+          return post;
+        }
+
+        const liked = !post.liked;
+        return {
+          ...post,
+          liked,
+          likes: post.likes + (liked ? 1 : -1),
+        };
+      })
+    );
+  }
+
+  function handleDelete(id) {
+    setPosts((previousPosts) => previousPosts.filter((post) => post.id !== id));
+  }
+
+  const filteredPosts =
+    selectedCategory === 'All'
+      ? posts
+      : posts.filter(
+          (post) =>
+            post.category?.toLowerCase() ===
+            selectedCategory.toLowerCase()
+        );
+
   return (
     <BrowserRouter>
       <div className="app">

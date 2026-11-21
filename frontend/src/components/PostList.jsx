@@ -1,32 +1,30 @@
-
 import { useState } from 'react';
 import PostCard from './PostCard';
-import { filterPosts } from '../utils/posts';
+import { searchPosts } from '../utils/posts';
 
-function PostList({ posts = [] }) {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const filteredPosts = filterPosts(posts, searchTerm);
+function PostList({ posts, onLike, onDelete }) {
+  const [query, setQuery] = useState('');
+  const visiblePosts = searchPosts(posts, query);
 
   return (
     <section className="post-list">
       <h2>Community Feed</h2>
 
+      <label htmlFor="post-search">Search posts</label>
       <input
-        type="text"
-        aria-label="Search community posts"
-        placeholder="Search by title, content or author..."
-        value={searchTerm}
-        onChange={(event) => setSearchTerm(event.target.value)}
-        className="search-input"
+        id="post-search"
+        type="search"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        placeholder="Search by title or author"
       />
 
       {posts.length === 0 ? (
         <p>No posts yet. Be the first to share something!</p>
-      ) : filteredPosts.length === 0 ? (
-        <p>No matching posts found. Try another search.</p>
+      ) : visiblePosts.length === 0 ? (
+        <p>No posts match that search.</p>
       ) : (
-        filteredPosts.map((post, index) => (
+        visiblePosts.map((post) => (
           <PostCard
             key={post.id || index}
             id={post.id}
@@ -34,6 +32,10 @@ function PostList({ posts = [] }) {
             excerpt={post.excerpt}
             author={post.author}
             date={post.date}
+            likes={post.likes}
+            liked={post.liked}
+            onLike={() => onLike(post.id)}
+            onDelete={() => onDelete(post.id)}
           />
         ))
       )}
