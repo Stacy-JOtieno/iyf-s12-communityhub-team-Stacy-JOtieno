@@ -1,5 +1,4 @@
-
-import useForm from "../hooks/useForm";
+import { useState } from 'react';
 
 function CreatePost({ onAddPost, author = "Community Member" }) {
   const categories = [
