@@ -13,10 +13,14 @@ function CreatePost({ onAddPost, author = 'Community Member' }) {
     }
 
     const newPost = {
+      id: Date.now(),
       title: title.trim(),
       excerpt: excerpt.trim(),
       author,
       date: new Date().toLocaleDateString(),
+      createdAt: new Date().toISOString(),
+      likes: 0,
+      liked: false,
     };
 
     onAddPost(newPost);
