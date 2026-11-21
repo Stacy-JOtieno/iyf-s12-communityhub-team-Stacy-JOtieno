@@ -1,0 +1,16 @@
+.field { margin-bottom: 1rem; }
+.label { display: block; margin-bottom: 0.35rem; font-weight: 600; color: #1f2937; }
+.required { color: #b91c1c; }
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font: inherit;
+    color: #111827;
+    background: #fff;
+}
+.input:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 1px; }
+.invalid { border-color: #b91c1c; }
+.error { margin: 0.35rem 0 0; color: #991b1b; font-size: 0.875rem; }
