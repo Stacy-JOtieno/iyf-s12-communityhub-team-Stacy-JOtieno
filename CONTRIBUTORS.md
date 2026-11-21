@@ -180,3 +180,27 @@ Checked on 20 November 2026. These pull requests are open and still need a teamm
 - **PRs reviewed:** None for Week 9.
 
 - **Issues closed:** None yet.
+
+### Belinda May (@Belinda-May)
+
+#### Week 9
+
+**PRs opened:**
+- [#76 – Improve community post filter styling](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/76)
+
+**Contributions:**
+- Improved styling of community post category filters.
+- Added hover, active and keyboard focus states to filter buttons.
+- Styled the empty state and improved spacing around the posts list.
+- Updated the project README with Week 9 information and the recorded desktop Lighthouse accessibility baseline of 96%.
+
+**PRs reviewed and approved:**
+- [#57 – Fetch posts and useFetch hook](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/57)
+- [#61 – CSS Modules and Tailwind](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/61)
+- [#71 – useEffect practice](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/71)
+- [#73 – Before audit report](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/73)
+- [#74 – Lesson 19 posts API](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/74)
+
+**PRs merged:** None confirmed.
+
+**Issues closed:** None confirmed.
