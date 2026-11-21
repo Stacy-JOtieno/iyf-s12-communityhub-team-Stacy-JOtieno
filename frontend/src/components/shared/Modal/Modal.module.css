@@ -1,0 +1,18 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.dialog {
+    background: #fff;
+    color: #111827;
+    border-radius: 12px;
+    padding: 1.25rem;
+    max-width: 28rem;
+    width: 100%;
+}
+.actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; }

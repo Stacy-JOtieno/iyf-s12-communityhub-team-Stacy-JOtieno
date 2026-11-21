@@ -1,0 +1,148 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  color: #1f2937;
+  text-align: left;
+}
+
+.shell h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  letter-spacing: 0;
+  color: #111827;
+}
+
+.shell h2 {
+  font-size: 1.35rem;
+  margin: 0 0 8px;
+  letter-spacing: 0;
+  color: #111827;
+}
+
+.skip {
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  transform: translateY(-150%);
+  background: #1e3a8a;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.skip:focus {
+  transform: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 6%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav a,
+.sidebar a {
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.nav a.active,
+.sidebar a.active {
+  color: #1e3a8a;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.nav a:focus-visible,
+.sidebar a:focus-visible,
+.main a:focus-visible {
+  outline: 3px solid #1e3a8a;
+  outline-offset: 2px;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+  padding: 28px 6%;
+  align-items: flex-start;
+}
+
+.sideTitle {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  color: #3e465c;
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}

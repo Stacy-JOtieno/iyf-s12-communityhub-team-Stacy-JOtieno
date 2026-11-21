@@ -4,11 +4,14 @@ function Header() {
     <header className="header">
       <h1>CommunityHub</h1>
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Posts</a>
-        <a href="#">About</a>
-      </nav>
+      <div className="header-actions">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Posts</a>
+          <a href="#">About</a>
+        </nav>
+        <button type="button" className="login-button">Log in</button>
+      </div>
     </header>
   );
 }
