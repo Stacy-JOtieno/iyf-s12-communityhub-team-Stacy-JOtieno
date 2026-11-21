@@ -11,27 +11,10 @@ function Header() {
     <header className="header">
       <h1>CommunityHub</h1>
 
-      <nav>
-        <a
-          href="#home"
-          onClick={() => scrollToSection('home')}
-        >
-          Home
-        </a>
-
-        <a
-          href="#posts"
-          onClick={() => scrollToSection('posts')}
-        >
-          Posts
-        </a>
-
-        <a
-          href="#about"
-          onClick={() => scrollToSection('about')}
-        >
-          About
-        </a>
+      <nav aria-label="Primary">
+        <a href="#main">Home</a>
+        <a href="#feed">Posts</a>
+        <a href="#about">About</a>
       </nav>
     </header>
   );

@@ -92,7 +92,26 @@ The desktop baseline was recorded using Chrome Lighthouse. Further audits can be
 
 ## Contribution Guidelines
 
-- Create a feature branch before making changes.
-- Commit changes with clear messages.
-- Open a pull request for review.
-- Do not push directly to the main branch.
+# Start the development server
+npm run dev
+```
+
+## Week 9 accessibility audit
+
+Antony Shisia ran Chrome Lighthouse on the production preview of the CommunityHub frontend (`npm run build`, then `npm run preview` at http://127.0.0.1:4173). Only the Accessibility category was scored.
+
+| Run | Score | What Lighthouse reported |
+| --- | --- | --- |
+| Before the task 18.4 fixes | 93 | Post metadata contrast was 3.99:1 (`#777f95` on `#ffffff`; 4.5:1 required). The sidebar heading jumped from `h1` to `h3`. |
+| After the task 18.4 fixes | 100 | Those two audits passed. |
+
+Fixes in this change:
+
+- Post metadata and footer text use `#3e465c` on white so the contrast clears AA.
+- The sidebar heading is an `h2`, so the heading order follows the page `h1`.
+- The search field has a visible label, not only an accessible name.
+- Header and sidebar links point at real sections (`#main`, `#feed`, `#about`) instead of `href="#"`.
+- A skip link and `:focus-visible` outlines keep keyboard use visible.
+- The document title is CommunityHub.
+
+The routed multi-page app is on the Week 9 mini-project branch. This score is for the shared frontend shell that this branch changes.

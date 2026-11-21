@@ -44,56 +44,19 @@ function App() {
         );
 
   return (
-    <div className="app" id="home">
+    <div className="app">
+      <a className="skip-link" href="#main">Skip to content</a>
       <Header />
 
-      <main className="main-content">
-        <section className="posts-section" id="posts">
-          <h2>Community Posts</h2>
+      <main id="main" className="main-content">
+        <Sidebar />
 
           <CreatePost onAddPost={handleAddPost} />
-
-          <div className="category-filters">
-            {[
-              'All',
-              'General',
-              'Announcements',
-              'Tech & Coding',
-              'Events',
-            ].map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={
-                  selectedCategory === category ? 'active' : ''
-                }
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-
-          <div className="posts-list">
-            {filteredPosts.length === 0 ? (
-              <p>No posts in this category yet.</p>
-            ) : (
-              filteredPosts.map((post, index) => (
-                <article
-                  className="post-card"
-                  key={post.id || index}
-                >
-                  <h3>{post.title}</h3>
-                  <p>{post.excerpt}</p>
-                  <small>
-                    By {post.author || 'Community Member'}
-                  </small>
-                </article>
-              ))
-            )}
-          </div>
-        </section>
-
-        <Sidebar />
+          <PostList posts={posts} />
+          <p id="about">
+            CommunityHub is the Season 12 space for sharing posts with the cohort.
+          </p>
+        </div>
       </main>
 
       <div id="about">
