@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -11,7 +10,28 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   function handleAddPost(newPost) {
-    setPosts((previousPosts) => [newPost, ...previousPosts]);
+    setPosts((previousPosts) => sortNewestFirst([newPost, ...previousPosts]));
+  }
+
+  function handleLike(id) {
+    setPosts((previousPosts) =>
+      previousPosts.map((post) => {
+        if (post.id !== id) {
+          return post;
+        }
+
+        const liked = !post.liked;
+        return {
+          ...post,
+          liked,
+          likes: post.likes + (liked ? 1 : -1),
+        };
+      })
+    );
+  }
+
+  function handleDelete(id) {
+    setPosts((previousPosts) => previousPosts.filter((post) => post.id !== id));
   }
 
   const filteredPosts =

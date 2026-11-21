@@ -1,43 +1,46 @@
-
 import { describe, expect, it } from 'vitest';
-import { filterPosts } from './posts';
+import { searchPosts, sortNewestFirst } from './posts.js';
 
-const samplePosts = [
+const posts = [
   {
-    title: 'Learning React',
-    excerpt: 'My journey with JavaScript',
-    author: 'Belinda',
+    id: 1,
+    title: 'Older Post',
+    author: 'Alice',
+    createdAt: '2026-01-10T00:00:00.000Z',
   },
   {
-    title: 'Community Updates',
-    excerpt: 'News from our community',
-    author: 'Stacy',
-  },
-  {
-    title: 'Web Development',
-    excerpt: 'Building projects with HTML and CSS',
-    author: 'Carlos',
+    id: 2,
+    title: 'Newer Post',
+    author: 'Brian Kamau',
+    createdAt: '2026-01-15T00:00:00.000Z',
   },
 ];
 
-describe('filterPosts', () => {
-  it('filters posts by title', () => {
-    expect(filterPosts(samplePosts, 'react')).toHaveLength(1);
+describe('sortNewestFirst', () => {
+  it('puts the newest post first', () => {
+    const sorted = sortNewestFirst(posts);
+    expect(sorted.map((post) => post.id)).toEqual([2, 1]);
   });
 
-  it('filters posts by content', () => {
-    expect(filterPosts(samplePosts, 'JavaScript')).toHaveLength(1);
+  it('does not change the original array', () => {
+    const original = posts.map((post) => ({ ...post }));
+    sortNewestFirst(posts);
+    expect(posts).toEqual(original);
+  });
+});
+
+describe('searchPosts', () => {
+  it('matches a title regardless of case', () => {
+    const found = searchPosts(posts, 'newer');
+    expect(found.map((post) => post.id)).toEqual([2]);
   });
 
-  it('filters posts by author', () => {
-    expect(filterPosts(samplePosts, 'Stacy')).toHaveLength(1);
+  it('matches an author', () => {
+    const found = searchPosts(posts, 'alice');
+    expect(found.map((post) => post.id)).toEqual([1]);
   });
 
-  it('returns all posts when the search term is empty', () => {
-    expect(filterPosts(samplePosts, '')).toHaveLength(3);
-  });
-
-  it('returns an empty array when no posts match', () => {
-    expect(filterPosts(samplePosts, 'football')).toHaveLength(0);
+  it('returns every post when the query is blank', () => {
+    expect(searchPosts(posts, '   ')).toEqual(posts);
   });
 });
