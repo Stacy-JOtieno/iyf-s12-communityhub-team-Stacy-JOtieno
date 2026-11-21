@@ -284,3 +284,55 @@
 .footer nav a:hover {
   color: #5146a5;
 }
+
+/* Community post category filters */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.category-filters button {
+  padding: 9px 16px;
+  border: 1px solid #e5e7ef;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #5146a5;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.category-filters button:hover {
+  background: #f0effa;
+}
+
+.category-filters button.active {
+  background: #5146a5;
+  border-color: #5146a5;
+  color: #ffffff;
+}
+
+.category-filters button:focus-visible {
+  outline: 3px solid rgba(81, 70, 165, 0.3);
+  outline-offset: 3px;
+}
+
+/* Community posts list */
+.posts-list {
+  margin-top: 20px;
+}
+
+/* Empty category state */
+.posts-list > p {
+  padding: 32px 20px;
+  margin: 0;
+  border: 1px dashed #d8d9e8;
+  border-radius: 12px;
+  background: #f8f8fc;
+  color: #777f95;
+  text-align: center;
+  line-height: 1.6;
+}
