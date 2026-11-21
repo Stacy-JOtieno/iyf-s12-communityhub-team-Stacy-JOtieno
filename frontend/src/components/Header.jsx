@@ -1,5 +1,12 @@
 
 function Header() {
+  function scrollToSection(sectionId) {
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   return (
     <header className="header">
       <h1>CommunityHub</h1>

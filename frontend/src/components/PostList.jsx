@@ -1,12 +1,10 @@
-
 import { useState } from 'react';
 import PostCard from './PostCard';
-import { filterPosts } from '../utils/posts';
+import { searchPosts } from '../utils/posts';
 
-function PostList({ posts = [] }) {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const filteredPosts = filterPosts(posts, searchTerm);
+function PostList({ posts, onLike, onDelete }) {
+  const [query, setQuery] = useState('');
+  const visiblePosts = searchPosts(posts, query);
 
   return (
     <section id="feed" className="post-list">
@@ -24,16 +22,20 @@ function PostList({ posts = [] }) {
 
       {posts.length === 0 ? (
         <p>No posts yet. Be the first to share something!</p>
-      ) : filteredPosts.length === 0 ? (
-        <p>No matching posts found. Try another search.</p>
+      ) : visiblePosts.length === 0 ? (
+        <p>No posts match that search.</p>
       ) : (
-        filteredPosts.map((post, index) => (
+        visiblePosts.map((post) => (
           <PostCard
-            key={post.id || index}
+            key={post.id}
             title={post.title}
             excerpt={post.excerpt}
             author={post.author}
             date={post.date}
+            likes={post.likes}
+            liked={post.liked}
+            onLike={() => onLike(post.id)}
+            onDelete={() => onDelete(post.id)}
           />
         ))
       )}

@@ -1,0 +1,37 @@
+.day-5 .page-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-5 .page-body {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.day-5 .page-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.day-5 .page-main {
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .day-5 .page-body {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .day-5 .page-sidebar {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
