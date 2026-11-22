@@ -4,7 +4,6 @@ function useFetch(url) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [reloadKey, setReloadKey] = useState(0);
 
     useEffect(() => {
         const controller = new AbortController();
@@ -19,29 +18,24 @@ function useFetch(url) {
                     throw new Error("Fetch failed");
                 }
 
-                setData(await response.json());
+                const json = await response.json();
+                setData(json);
             } catch (err) {
                 if (err.name === "AbortError") {
                     return;
                 }
                 setError(err.message);
             } finally {
-                if (!controller.signal.aborted) {
-                    setLoading(false);
-                }
+                setLoading(false);
             }
         }
 
         fetchData();
 
         return () => controller.abort();
-    }, [url, reloadKey]);
+    }, [url]);
 
-    function reload() {
-        setReloadKey((key) => key + 1);
-    }
-
-    return { data, loading, error, reload };
+    return { data, loading, error };
 }
 
 export default useFetch;

@@ -4,34 +4,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import CreatePost from './components/CreatePost';
-import PostList from './components/PostList';
-import { sortNewestFirst } from './utils/posts';
-
-const starterPosts = [
-  {
-    id: 1,
-    title: 'Getting Started with React',
-    excerpt: 'Learn the basics of React components and JSX.',
-    author: 'Amina Otieno',
-    date: 'Jan 15, 2026',
-    createdAt: '2026-01-15T09:00:00.000Z',
-    likes: 2,
-    liked: false,
-  },
-  {
-    id: 2,
-    title: 'JavaScript Best Practices',
-    excerpt: 'Write cleaner code by keeping data and markup apart.',
-    author: 'Brian Kamau',
-    date: 'Jan 10, 2026',
-    createdAt: '2026-01-10T09:00:00.000Z',
-    likes: 1,
-    liked: false,
-  },
-];
 
 function App() {
-  const [posts, setPosts] = useState(starterPosts);
+  const [posts, setPosts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   function handleAddPost(newPost) {
     setPosts((previousPosts) => sortNewestFirst([newPost, ...previousPosts]));
@@ -58,24 +34,34 @@ function App() {
     setPosts((previousPosts) => previousPosts.filter((post) => post.id !== id));
   }
 
+  const filteredPosts =
+    selectedCategory === 'All'
+      ? posts
+      : posts.filter(
+          (post) =>
+            post.category?.toLowerCase() ===
+            selectedCategory.toLowerCase()
+        );
+
   return (
     <div className="app">
+      <a className="skip-link" href="#main">Skip to content</a>
       <Header />
 
-      <main className="main-content">
+      <main id="main" className="main-content">
         <Sidebar />
 
-        <div className="posts-section">
           <CreatePost onAddPost={handleAddPost} />
-          <PostList
-            posts={sortNewestFirst(posts)}
-            onLike={handleLike}
-            onDelete={handleDelete}
-          />
+          <PostList posts={posts} />
+          <p id="about">
+            CommunityHub is the Season 12 space for sharing posts with the cohort.
+          </p>
         </div>
       </main>
 
-      <Footer />
+      <div id="about">
+        <Footer />
+      </div>
     </div>
   );
 }
