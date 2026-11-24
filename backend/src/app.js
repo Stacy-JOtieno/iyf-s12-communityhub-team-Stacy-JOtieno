@@ -17,6 +17,14 @@ app.get('/about', (req, res) => {
   res.send('CommunityHub - A community platform');
 });
 
+// Current server time route
+app.get('/api/time', (req, res) => {
+  res.json({
+    message: 'Current server time',
+    time: new Date().toISOString()
+  });
+});
+
 // API routes
 app.use('/api', routes);
 
