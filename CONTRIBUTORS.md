@@ -75,14 +75,14 @@
 
 ### Stacy Otieno (@Stacy-JOtieno)
 
-###Week 8
+### Week 8
 
 - **PRs opened**
 - [#1](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/1) - Create .gitignore
 - [#2](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/2) - Vite React scaffold in frontend
 - [#5](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/5) - Add contents in .oxlintrc.json
 - [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25) - Setup/vite scaffold
-
+- [#55](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/51) - Contributors.md
 - **PRs merged**
 - [#1](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/1) - Create .gitignore
 - [#2](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/2) - Vite React scaffold in frontend
@@ -111,6 +111,40 @@
 - [#42](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/42) - Fix spelling in contributors
 - [#44](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/44) - community post search and utility tests post search and utility 
 - [#47](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/47) - task15 4.jsx
+
+### Week 9
+
+-**PRs opened**
+
+- [#55](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/55) - App.jsx updates
+- [#67](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/67) - Add Task 17.1: useEffect Hook
+- [#68](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/68) - Week9/18.2
+- [#70](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/70) - Week9/18.1
+- [#73](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/73) - Add the before audit report
+- [#79](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/79) - Stacy j otieno week9
+
+-**PRs merged**
+
+- [#55](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/55) - App.jsx updates
+- [#67](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/67) - Add Task 17.1: useEffect Hook
+- [#68](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/68) - Week9/18.2
+- [#70](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/70) - Week9/18.1
+- [#73](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/73) - Add the before audit report
+- [#79](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/79) - Stacy j otieno week9
+
+- **PRs reviewed and approved**
+
+- [#56](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/56) - Add: task 17.1 useEffect counter and effect patterns 
+- [#58](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/58) - Add: task 17.3 routes, dynamic post pages, and navigation
+- [#59](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/59) - Add: task 17.4 loading spinner, error message, and retry
+- [#60](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/60) - Add: task 18.1 useLocalStorage, useToggle, and useForm hooks
+- [#63](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/63) - Fix: task 18.4 keyboard focus, labels, contrast, and heading order
+- [#64](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/64) - Add: week 9 daily challenges
+- [#65](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/65) - Add: week 9 CommunityHub with routes and JSONPlaceholder posts
+- [#66](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/66) - Docs: add Antony Shisia Week 9 contributions
+- [#69](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/69) - Add: Task 17.1 useEffect practice - #69
+- [#76](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/76) - Improve community post filter styling
+- [#78](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/78) - feat: add useEffect practice components (17.1, 17.2)
 
 ### Stephen Muchemi (@Stephenmuchemi091-dot)
 
@@ -150,9 +184,60 @@
   - [#31](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/31) - Task 15.1 JSX intro.
   - [#32](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/32) - Task 15.2 components.
   - [#34](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/34) - Task 15.4 composition.
+  - [#41](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/41) - Week 8 contributors entry.
 
 - **PRs reviewed:**
   - [#30](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/30#pullrequestreview-5954247231) - Fix spelling of contributor name.
   - [#25](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/25#pullrequestreview-5954247622) - Vite scaffold.
 
 - **Issues closed:** None yet.
+
+#### Week 9
+
+Checked on 20 November 2026. These pull requests are open and still need a teammate review before they can merge.
+
+- **PRs opened:**
+  - [#56](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/56) - Task 17.1 useEffect.
+  - [#57](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/57) - Task 17.2 data fetching.
+  - [#58](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/58) - Task 17.3 React Router.
+  - [#59](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/59) - Task 17.4 loading and errors.
+  - [#60](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/60) - Task 18.1 custom hooks.
+  - [#61](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/61) - Task 18.2 CSS Modules and Tailwind.
+  - [#62](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/62) - Task 18.3 component library.
+  - [#63](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/63) - Task 18.4 accessibility.
+  - [#64](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/64) - Daily challenges.
+  - [#65](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/65) - CommunityHub routes and JSONPlaceholder posts.
+  - [#66](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/66) - Week 9 contributors entry.
+
+- **PRs merged:** None yet.
+
+- **PRs reviewed:**
+
+- [#55](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/55) - App.jsx updates
+
+- **Issues closed:** None yet.
+
+### Belinda May (@Belinda-May)
+
+#### Week 9
+
+**PRs opened:**
+- [#76 – Improve community post filter styling](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/76)
+
+**Contributions:**
+- Improved styling of community post category filters.
+- Added hover, active and keyboard focus states to filter buttons.
+- Styled the empty state and improved spacing around the posts list.
+- Updated the project README with Week 9 information and the recorded desktop Lighthouse accessibility baseline of 96%.
+
+**PRs reviewed and approved:**
+- [#57 – Fetch posts and useFetch hook](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/57)
+- [#61 – CSS Modules and Tailwind](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/61)
+- [#71 – useEffect practice](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/71)
+- [#73 – Before audit report](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/73)
+- [#74 – Lesson 19 posts API](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/74)
+
+**PRs merged:** None confirmed.
+
+
+**Issues closed:** None confirmed.
