@@ -27,7 +27,8 @@ function PostList({ posts, onLike, onDelete }) {
       ) : (
         visiblePosts.map((post) => (
           <PostCard
-            key={post.id}
+            key={post.id || index}
+            id={post.id}
             title={post.title}
             excerpt={post.excerpt}
             author={post.author}

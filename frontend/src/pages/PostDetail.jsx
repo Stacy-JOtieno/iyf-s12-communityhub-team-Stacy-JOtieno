@@ -5,7 +5,7 @@ import ErrorMessage from "../components/shared/ErrorMessage";
 import styles from "../components/Post/Post.module.css";
 
 function PostDetail() {
-  const { postId } = useParams();
+  const { id: postId } = useParams();
   const { posts, loading, error, reload, toggleLike } = usePosts();
   const post = posts.find((item) => String(item.id) === postId);
 

@@ -1,17 +1,17 @@
+
 function Sidebar() {
-    return (
-        <aside className="sidebar">
-            <h2>Categories</h2>
-            <nav aria-label="Categories">
-                <ul>
-                    <li><a href="#feed">General</a></li>
-                    <li><a href="#feed">Announcements</a></li>
-                    <li><a href="#feed">Tech &amp; Coding</a></li>
-                    <li><a href="#feed">Events</a></li>
-                </ul>
-            </nav>
-        </aside>
-    );
+  return (
+    <aside className="sidebar">
+      <h3>Categories</h3>
+
+      <ul>
+        <li>General</li>
+        <li>Announcements</li>
+        <li>Tech &amp; Coding</li>
+        <li>Events</li>
+      </ul>
+    </aside>
+  );
 }
 
 export default Sidebar;

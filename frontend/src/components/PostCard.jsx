@@ -1,17 +1,15 @@
-function PostCard({
-  title,
-  excerpt,
-  author,
-  date,
-  likes = 0,
-  liked = false,
-  onLike,
-  onDelete,
-}) {
+
+import { Link } from 'react-router-dom';
+
+function PostCard({ id, title, excerpt, author, date }) {
   return (
     <article className="post-card">
-      <h3>{title}</h3>
+      <h3>
+        <Link to={`/posts/${id}`}>{title}</Link>
+      </h3>
+
       <p>{excerpt}</p>
+
       <div className="post-meta">
         <span>By {author}</span>
         <span>{date}</span>
@@ -25,6 +23,8 @@ function PostCard({
           Delete
         </button>
       </div>
+
+      <Link to={`/posts/${id}`}>Read more</Link>
     </article>
   );
 }
