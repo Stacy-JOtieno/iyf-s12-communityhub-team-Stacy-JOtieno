@@ -219,7 +219,7 @@ Checked on 20 November 2026. These pull requests are open and still need a teamm
 
 #### Week 10
 
-Member 4, middleware owner. Branch: [feature/middleware](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/tree/feature/middleware). Checked on 27 November 2026. The branch is pushed. A pull request is not open yet.
+Member 4, middleware owner. Branch: [feature/middleware](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/tree/feature/middleware). Checked on 27 November 2026.
 
 - **Contributions:**
   - Task 20.1: logger, request-time, and `requireAuth` middleware in `backend/src/middleware/`.
@@ -232,7 +232,8 @@ Member 4, middleware owner. Branch: [feature/middleware](https://github.com/Stac
   - [070a3db](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/070a3db73a9f83fd04e9b09035188250647eeba6) - Add: Day 4 logger writes request logs to a file.
   - [dfa269f](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/dfa269f5f75be361730339a4b5db5c656adec903) - Update: Task 20.1 exercise includes every required step.
 
-- **PRs opened:** None yet.
+- **PRs opened:**
+  - [#86](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/86) - Week 10 contributors entry.
 
 - **PRs merged:** None yet.
 
