@@ -241,3 +241,23 @@ Checked on 20 November 2026. These pull requests are open and still need a teamm
 
 
 **Issues closed:** None confirmed.
+
+
+#### Week 10 – Backend Basics
+
+
+**Assigned role:** Member 2 Belinda – Posts API (Read Operations)
+
+**Contributions:**
+- Created the Posts API controller in `backend/src/controllers/postsController.js`.
+- Implemented `GET /api/posts` to retrieve all posts.
+- Implemented `GET /api/posts/:id` to retrieve an individual post by ID.
+- Added validation for invalid post IDs (400 Bad Request).
+- Added handling for posts that do not exist (404 Not Found).
+- Registered the Posts router in the main API router.
+- Tested both GET endpoints and their error responses.
+
+**PRs opened:** Pending.
+
+**PRs reviewed:** Pending.
+

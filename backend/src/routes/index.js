@@ -1,7 +1,6 @@
-
 const express = require('express');
-
 const router = express.Router();
+const postsRoutes = require('./posts');
 
 // API health check
 router.get('/health', (req, res) => {
@@ -11,5 +10,6 @@ router.get('/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+router.use(postsRoutes);
 
 module.exports = router;
