@@ -1,8 +1,10 @@
 const { describe, it, before, after } = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
 const http = require('node:http');
 
 const app = require('./task-20-1-middleware');
+const { logFile } = app;
 
 function request(server, { method = 'GET', path, headers = {}, body }) {
   const { port } = server.address();
@@ -83,6 +85,18 @@ describe('Task 20.1 exercises', () => {
     assert.equal(blocked.status, 401);
     assert.equal(blocked.body.error, 'No authorization header');
 
+    const protectedRoute = await request(server, {
+      path: '/api/protected',
+      headers: { Authorization: 'Bearer lesson-token' }
+    });
+    assert.equal(protectedRoute.status, 200);
+    assert.equal(protectedRoute.body.message, 'This is protected data');
+
+    const adminBlocked = await request(server, { path: '/api/admin/status' });
+    assert.equal(adminBlocked.status, 401);
+    const adminLine = await waitForLogLine(logFile, '/api/admin/status 401');
+    assert.match(adminLine, /GET \/api\/admin\/status 401 \d+ms$/);
+
     const allowed = await request(server, {
       path: '/api/admin/status',
       headers: { Authorization: 'Bearer lesson-token' }
@@ -90,4 +104,44 @@ describe('Task 20.1 exercises', () => {
     assert.equal(allowed.status, 200);
     assert.equal(allowed.body.message, 'Admin area');
   });
+
+  it('Day 4 log line has timestamp, method, URL, and response time', async () => {
+    const marker = `/api/day-4-${Date.now()}`;
+    const response = await request(server, { path: marker });
+    assert.equal(response.status, 404);
+
+    const line = await waitForLogLine(logFile, marker);
+    assert.match(
+      line,
+      new RegExp(
+        `^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z - GET ${escapeRegExp(marker)} 404 \\d+ms$`
+      )
+    );
+  });
 });
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function waitForLogLine(file, marker) {
+  const started = Date.now();
+
+  return new Promise((resolve, reject) => {
+    const check = () => {
+      const text = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : '';
+      const line = text.split(/\r?\n/).find((entry) => entry.includes(marker));
+      if (line) {
+        resolve(line);
+        return;
+      }
+      if (Date.now() - started > 1000) {
+        reject(new Error(`Log line for ${marker} was not written`));
+        return;
+      }
+      setTimeout(check, 20);
+    };
+
+    check();
+  });
+}

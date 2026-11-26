@@ -1,34 +1,58 @@
 // ============================================
 // LESSON 20 — CLASS EXERCISE
 // Week 10 · Task 20.1: Middleware
+// Daily challenge Day 4: logger also records response time and writes a file.
 //
-// Exercise 1: logger and request-time middleware
-// Exercise 2: built-in middleware (JSON, forms, static files)
-// Exercise 3: route-specific auth middleware
-//
-// The function bodies live in backend/src/middleware/ (Member 4).
-// This file is the exercise: it applies them to routes.
-//
+// Lives in: backend/exercises/antonyshisia/task-20-1-middleware.js
 // Run from backend/:
 //   node exercises/antonyshisia/task-20-1-middleware.js
-// Test with task-20-1.http, or:
+// Test:
 //   node --test exercises/antonyshisia/task-20-1-middleware.test.js
 // ============================================
 
+const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const logger = require('../../src/middleware/logger');
-const requestTime = require('../../src/middleware/requestTime');
-const requireAuth = require('../../src/middleware/requireAuth');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const logDir = path.join(__dirname, '..', '..', 'logs');
+const logFile = path.join(logDir, 'requests.log');
 
 // Exercise 1 — Understanding middleware.
-// logger records method, URL, timestamp, and response time.
-// requestTime stamps the request so a route can read req.requestTime.
+// Logs method, URL, and timestamp as the request arrives.
+// On the way out, logs response time and appends the line to a file (Day 4).
+const logger = (req, res, next) => {
+  const start = Date.now();
+  const timestamp = new Date().toISOString();
+  // Snapshot the URL now. A mounted route such as /api/admin rewrites req.url later.
+  const url = req.originalUrl || req.url;
+
+  console.log(`${timestamp} - ${req.method} ${url}`);
+
+  res.on('finish', () => {
+    const durationMs = Date.now() - start;
+    const line = `${timestamp} - ${req.method} ${url} ${res.statusCode} ${durationMs}ms`;
+    console.log(line);
+
+    try {
+      fs.mkdirSync(logDir, { recursive: true });
+      fs.appendFileSync(logFile, `${line}\n`);
+    } catch (err) {
+      console.error('Failed to write request log:', err.message);
+    }
+  });
+
+  next();
+};
+
+const addRequestTime = (req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  next();
+};
+
 app.use(logger);
-app.use(requestTime);
+app.use(addRequestTime);
 
 app.get('/api/time', (req, res) => {
   res.json({ requestTime: req.requestTime });
@@ -37,6 +61,7 @@ app.get('/api/time', (req, res) => {
 // Exercise 2 — Built-in middleware.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/api/echo', (req, res) => {
@@ -44,11 +69,20 @@ app.post('/api/echo', (req, res) => {
 });
 
 // Exercise 3 — Route-specific middleware.
+const requireAuth = (req, res, next) => {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader) {
+    return res.status(401).json({ error: 'No authorization header' });
+  }
+
+  next();
+};
+
 app.get('/api/protected', requireAuth, (req, res) => {
   res.json({ message: 'This is protected data' });
 });
 
-// Every route under /api/admin must send an Authorization header.
 app.use('/api/admin', requireAuth);
 
 app.get('/api/admin/status', (req, res) => {
@@ -66,3 +100,4 @@ if (require.main === module) {
 }
 
 module.exports = app;
+module.exports.logFile = logFile;
