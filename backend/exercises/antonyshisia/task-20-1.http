@@ -1,0 +1,40 @@
+### Task 20.1 — Middleware exercises
+### Run: node exercises/antonyshisia/task-20-1-middleware.js
+### Then send these from the REST Client, or use curl.
+
+@base = http://localhost:3000
+
+### Exercise 1 — request time
+GET {{base}}/api/time
+
+### Exercise 2 — static file
+GET {{base}}/hello.txt
+
+### Exercise 2 — JSON body
+POST {{base}}/api/echo
+Content-Type: application/json
+
+{
+  "title": "Middleware",
+  "author": "Antony"
+}
+
+### Exercise 2 — URL-encoded form body
+POST {{base}}/api/echo
+Content-Type: application/x-www-form-urlencoded
+
+title=Middleware&author=Antony
+
+### Exercise 3 — protected route, no header (401)
+GET {{base}}/api/protected
+
+### Exercise 3 — protected route, with header
+GET {{base}}/api/protected
+Authorization: Bearer lesson-token
+
+### Exercise 3 — admin route, no header (401)
+GET {{base}}/api/admin/status
+
+### Exercise 3 — admin route, with header
+GET {{base}}/api/admin/status
+Authorization: Bearer lesson-token
