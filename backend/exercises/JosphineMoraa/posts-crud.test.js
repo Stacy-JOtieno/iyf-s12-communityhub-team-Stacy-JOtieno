@@ -1,77 +1,98 @@
-
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const express = require('express');
 const { once } = require('node:events');
+const app = require('../../src/app');
 
-const postsRouter = require('./posts-crud');
-
-test('Posts CRUD API', async (t) => {
-  const app = express();
-  app.use(express.json());
-  app.use('/api/posts', postsRouter);
-
+test('CommunityHub posts API CRUD integration', async t => {
   const server = app.listen(0);
   await once(server, 'listening');
 
-  const baseUrl = `http://localhost:${server.address().port}/api/posts`;
+  const baseUrl = `http://127.0.0.1:${server.address().port}/api/posts`;
 
-  t.after(() => {
-    server.close();
-  });
+  t.after(() => new Promise((resolve, reject) => {
+    server.close(error => error ? reject(error) : resolve());
+  }));
 
   let createdId;
 
-  await t.test('POST creates a post', async () => {
+  await t.test('GET all posts still returns the existing posts', async () => {
+    const response = await fetch(baseUrl);
+    const body = await response.json();
+
+    assert.equal(response.status, 200);
+    assert.equal(body.success, true);
+    assert.ok(Array.isArray(body.data));
+    assert.ok(body.data.some(post => post.id === 1));
+  });
+
+  await t.test('POST creates a post visible through GET', async () => {
     const response = await fetch(baseUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        title: 'My first post',
-        content: 'Hello CommunityHub!'
+        title: 'Josphine integration test',
+        content: 'Testing shared posts data',
+        author: 'Josphine'
       })
     });
-
-    const data = await response.json();
+    const body = await response.json();
 
     assert.equal(response.status, 201);
-    assert.equal(data.post.title, 'My first post');
-    assert.ok(data.post.id);
+    assert.equal(body.success, true);
+    assert.equal(body.data.title, 'Josphine integration test');
+    createdId = body.data.id;
 
-    createdId = data.post.id;
+    const getResponse = await fetch(`${baseUrl}/${createdId}`);
+    const getBody = await getResponse.json();
+
+    assert.equal(getResponse.status, 200);
+    assert.equal(getBody.data.id, createdId);
   });
 
-  await t.test('PUT updates a post', async () => {
+  await t.test('PUT updates the same post returned by GET', async () => {
     const response = await fetch(`${baseUrl}/${createdId}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        title: 'Updated post'
-      })
+      body: JSON.stringify({ title: 'Updated by Josphine' })
     });
-
-    const data = await response.json();
+    const body = await response.json();
 
     assert.equal(response.status, 200);
-    assert.equal(data.post.title, 'Updated post');
-    assert.ok(data.post.updatedAt);
+    assert.equal(body.data.title, 'Updated by Josphine');
+
+    const getResponse = await fetch(`${baseUrl}/${createdId}`);
+    const getBody = await getResponse.json();
+    assert.equal(getBody.data.title, 'Updated by Josphine');
   });
 
-  await t.test('DELETE removes a post', async () => {
+  await t.test('DELETE removes the post from GET results', async () => {
     const response = await fetch(`${baseUrl}/${createdId}`, {
       method: 'DELETE'
     });
 
     assert.equal(response.status, 200);
+
+    const getResponse = await fetch(`${baseUrl}/${createdId}`);
+    assert.equal(getResponse.status, 404);
   });
 
-  await t.test('Updating a missing post returns 404', async () => {
-    const response = await fetch(`${baseUrl}/99999`, {
-      method: 'PUT',
+  await t.test('Invalid and missing IDs return appropriate errors', async () => {
+    const invalidResponse = await fetch(`${baseUrl}/abc`);
+    assert.equal(invalidResponse.status, 400);
+
+    const missingResponse = await fetch(`${baseUrl}/999999`, {
+      method: 'DELETE'
+    });
+    assert.equal(missingResponse.status, 404);
+  });
+
+  await t.test('POST rejects missing required fields', async () => {
+    const response = await fetch(baseUrl, {
+      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ title: 'Missing' })
+      body: JSON.stringify({ title: 'Missing content' })
     });
 
-    assert.equal(response.status, 404);
+    assert.equal(response.status, 400);
   });
 });
