@@ -1,0 +1,28 @@
+.ex-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.ex-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.ex-btn-primary { background: #2563eb; }
+.ex-btn-secondary { background: #6b7280; }
+.ex-btn-danger { background: #dc2626; }
+
+.ex-btn-small { padding: 0.25rem 0.5rem; font-size: 0.8rem; }
+.ex-btn-medium { padding: 0.5rem 1rem; font-size: 1rem; }
+.ex-btn-large { padding: 0.75rem 1.5rem; font-size: 1.2rem; }
+
+.ex-spinner {
+    width: 1em;
+    height: 1em;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: ex-spin 0.8s linear infinite;
+}
+@keyframes ex-spin { to { transform: rotate(360deg); } }
