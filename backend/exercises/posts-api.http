@@ -1,41 +1,70 @@
-### Lesson 19 — requests for posts-api.js
-### VS Code: install "REST Client" (humao.rest-client), then click "Send Request" above each line.
-### No extension? Paste the URL into the browser (GET only) or use curl.
+### Lesson 19 — Task 19.4 Posts API
+### VS Code: install "REST Client" (humao.rest-client), then click "Send Request" above each block.
+### Run first, from backend/: node --watch exercises/antonyshisia/posts-api.js
 
 @base = http://localhost:3000
 
-### Welcome text
-GET {{base}}/
-
-### Health check (JSON)
-GET {{base}}/api/health
-
-### All posts (newest first by default)
+### Get all posts
 GET {{base}}/api/posts
 
-### One post
-GET {{base}}/api/posts/2
+### Get a single post
+GET {{base}}/api/posts/1
 
-### Not found -> 404
-GET {{base}}/api/posts/99
+### Filter by author (case-insensitive, partial match)
+GET {{base}}/api/posts?author=jane
 
-### Not a number -> 400
-GET {{base}}/api/posts/abc
-
-### Filter by author (case-insensitive)
-GET {{base}}/api/posts?author=Amina
-
-### Search titles
-GET {{base}}/api/posts?search=express
+### Newest first
+GET {{base}}/api/posts?sort=newest
 
 ### Most liked first
 GET {{base}}/api/posts?sort=popular
 
-### Bad sort -> 400
-GET {{base}}/api/posts?sort=random
+### Missing post -> 404
+GET {{base}}/api/posts/99
 
-### Page 2, two per page
-GET {{base}}/api/posts?page=2&limit=2
+### Create a post
+POST {{base}}/api/posts
+Content-Type: application/json
 
-### Unknown route -> 404
-GET {{base}}/api/nothing-here
+{
+  "title": "Query Strings vs Route Params",
+  "content": "Params name the thing. Query strings filter the list.",
+  "author": "Alex Kim"
+}
+
+### Missing fields -> 400
+POST {{base}}/api/posts
+Content-Type: application/json
+
+{
+  "title": "Untitled"
+}
+
+### Update a post
+PUT {{base}}/api/posts/1
+Content-Type: application/json
+
+{
+  "title": "Getting Started with Node.js and Express",
+  "content": "Node.js is a JavaScript runtime that pairs well with Express."
+}
+
+### Update a missing post -> 404
+PUT {{base}}/api/posts/99
+Content-Type: application/json
+
+{
+  "title": "Does not exist"
+}
+
+### Like a post
+PATCH {{base}}/api/posts/2/like
+
+### Like a missing post -> 404
+PATCH {{base}}/api/posts/99/like
+
+### Delete a post -> 204
+DELETE {{base}}/api/posts/1
+
+### Delete a missing post -> 404
+DELETE {{base}}/api/posts/1
