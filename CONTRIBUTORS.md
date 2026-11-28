@@ -222,20 +222,24 @@ Checked on 20 November 2026. These pull requests are open and still need a teamm
 Member 4, middleware owner. Branch: [feature/middleware](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/tree/feature/middleware). Checked on 27 November 2026.
 
 - **Contributions:**
+  - Lesson 19 read-only posts API in `backend/exercises/antonyshisia/posts-api.js`, with `backend/exercises/posts-api.http`. Merged in PR #74.
   - Task 20.1: logger, request-time, and `requireAuth` middleware in `backend/src/middleware/`.
   - Task 20.1 exercises in `backend/exercises/antonyshisia/task-20-1-middleware.js`: logger, request time, JSON and form bodies, static files, and auth on `/api/protected` and `/api/admin`.
   - Daily Challenge Day 4: the logger records method, URL, timestamp, and response time, and writes each line to `backend/logs/requests.log`.
 
 - **Commits:**
+  - [fc33969](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/fc33969b5e8ae78be30b83d11ee18f6ef119796a) - Add: Lesson 19 read-only posts API.
   - [f37ef5b](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/f37ef5b9bc266255277759078bd38652c5052ded) - Add: Task 20.1 logger, request time, and auth middleware.
   - [22adfd7](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/22adfd7fd5f2ccc53638389cee04e9929aecbb06) - Add: Task 20.1 middleware exercises.
   - [070a3db](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/070a3db73a9f83fd04e9b09035188250647eeba6) - Add: Day 4 logger writes request logs to a file.
   - [dfa269f](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/commit/dfa269f5f75be361730339a4b5db5c656adec903) - Update: Task 20.1 exercise includes every required step.
 
 - **PRs opened:**
+  - [#74](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/74) - Lesson 19 read-only posts API.
   - [#86](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/86) - Week 10 contributors entry.
 
-- **PRs merged:** None yet.
+- **PRs merged:**
+  - [#74](https://github.com/Stacy-JOtieno/iyf-s12-communityhub-team-Stacy-JOtieno/pull/74) - Lesson 19 read-only posts API. Approved by Belinda May.
 
 - **PRs reviewed:** None for Week 10.
 
